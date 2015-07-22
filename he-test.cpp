@@ -5,8 +5,8 @@
 #include <random>
 using namespace std;
 
-#define q 322
-#define plain_text 15
+#define q 12
+#define plain_text 8
 
 long mul(vector<int> a, vector<int> b)
 {
@@ -62,7 +62,7 @@ int main()
     long p2 = mul(a, s2) + q*e;
     /* ************************************ */
     long Dec = (Enc - p1 - p2) % q + q;
-    cout << "Decrypted text: " << Dec << endl;
+    cout << "Decrypted text: " << Dec%q << endl;
     
     return 0;
 }
