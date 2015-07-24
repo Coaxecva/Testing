@@ -1,3 +1,4 @@
+//LD_LIBRARY_PATH=/usr/local/lib ./HElib-dist
 #include "FHE.h"
 #include "EncryptedArray.h"
 #include <NTL/lzz_pXFactoring.h>
